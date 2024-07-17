@@ -178,11 +178,74 @@
 font-size: 16px;
 font-weight: 500;
  }
+
  .one-last-discusion span{
   margin-top: 15px;
   font-size: 12px;
  
    }
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: #f8f9fa; 
+  padding: 20px 0px;
+}
+.testimony{
+background-color: var(--secondary-color);
+  height: 300px;
+  padding: 35px 30px 0px 30px;
+  background-color: var(--secondary-color);
+}
+
+.testimony img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.testimony .card {
+  max-width: 400px;
+ min-width: 200px;
+ min-height: 80px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.testimony .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimony .d-flex {
+  align-items: center;
+}
+
+.testimony .d-block p {
+  margin: 10px 0;
+  font-family: var(--font-family-primary);
+}
+.testimony .d-block {
+  font-size: 14px;
+}
+.testimony .text-muted {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+
+
+#video {
+  min-width: 150px;
+  min-height: 150px;
+  width: 500px;
+  height: 350px;
+  max-width: 500px;
+  max-height: 350px;
+}
 
   /* Pied de page */
   footer {
