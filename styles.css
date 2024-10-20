@@ -143,7 +143,7 @@
   /* Style pour la dernière discussion */
 .last-discusion {
   position: relative;
-  padding-left: 16px; 
+  padding-left: 5px; 
   height: auto;/* Espace pour le trait vertical */
 }
 
@@ -151,7 +151,7 @@
 .last-discusion::before {
   content: '';
   position: absolute;
-  left: 10px; /* Position du trait vertical */
+  left: 1px; /* Position du trait vertical */
   top: 0;
   bottom: 0;
   width: 2px;
@@ -187,6 +187,9 @@ font-weight: 500;
    }
 
  
+   .carousel-item img{
+    border-radius: 0px 0px 10px 10px;
+   }
 
 /*  testimonial section */
 
