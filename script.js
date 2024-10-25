@@ -68,5 +68,18 @@
         });
 
 
+     
+        // Fonction pour gérer le chargement de la page
+       function handlePageLoad() {
+            // Masquer le loader et afficher le contenu après un délai
+            setTimeout(function () {
+                document.getElementById('loader').style.display = 'none'; // Masquer le loader
+                document.getElementById('content').style.display = 'block'; // Afficher le contenu
+            }, 1000); // Délai de 2000 ms (2 secondes)
+        }
+
+        // Écouteur d'événements pour l'événement 'load' de la fenêtre
+        window.addEventListener('load', handlePageLoad);
+   
 
       

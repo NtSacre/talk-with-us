@@ -36,6 +36,21 @@
     margin: 0;
     padding: 0;
   }
+  .loader {
+    position: fixed; /* Fixe le loader à l'écran */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Couleur de fond semi-transparente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; /* Assure que le loader est au-dessus du contenu */
+}
+#content {
+    display: none; /* Masquer le contenu au départ */
+}
   
   /* Styles principaux */
   main {
@@ -247,4 +262,107 @@ font-weight: 500;
     text-decoration: none;
     color: var(--secondary-color);
   }
+/* about section */
+
+.hero-section {
+  position: relative;
+  background-image: url('https://img.freepik.com/free-photo/young-manager-using-headphones-listen-music-while-working-from-home-office-computer-pc_482257-2363.jpg?t=st=1729810794~exp=1729814394~hmac=660ea37dc51b62a7cf7250c04c888f7cc9bbe70d0c8d881ef8b26c659faa443a&w=996');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 15px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px); /* Applique le flou ici */
+  z-index: 1;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.hero-section .cta-button {
+  padding: 15px 30px;
+  background-color: var(--tertiary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.about-section {
+ padding: 50px 0;
+  height: auto;
+}
+
+.about-item {
+  display: block;
+  align-items: center;
+ 
+ 
+}
+.about-item h2{
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.about-item p{
+  font-size: 1.3rem;
+  font-family: var(--font-family-primary);
+
+ 
+}
+
+.img-mission, .img-join, .img-why{
+
+  background-size: cover;       /* L'image couvre toute la zone, mais reste proportionnelle */
+  background-position: center;  /* Centre l'image dans la section */
+  background-repeat: no-repeat; /* Évite que l'image se répète */
+  width: 50%;                  /* Assure que l'élément prend toute la largeur du conteneur */
+  height: 50%;                 /* Assure que l'élément prend toute la hauteur (peut être ajusté selon les besoins) */
+  min-height: 400px;  
+
+}
+
+.img-mission{
+  background-image: url('https://img.freepik.com/free-vector/mission-accomplished-icon_318-41295.jpg?t=st=1729810794~exp=1729814394~hmac=d2b25f467d2872830a05a72')
+}
+.img-why{
+  background-image: url('https://img.freepik.com/free-vector/mission-accomplished-icon_318-41295.jpg?t=st=1729810794~exp=1729814394~hmac=d2b25f467d2872830a05a72')
+}
+.img-join{
+  background-image: url('https://img.freepik.com/free-photo/people-office-work-day_23-2150690154.jpg?t=st=1729810817~exp=1729814417~hmac=e4b9437997a622c4c5c8967229aec8841b286f09ffede875a8b1e4756d49863a')
+}
+
+
+@media (max-width: 768px) {
+  .about-item {
+    flex-direction: column;
+  }
+
+  .img-mission, .img-join, .img-why {
+    width: 100%;
+  
+  }
+}
 
